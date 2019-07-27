@@ -1,6 +1,7 @@
 var fs = require('fs');
 
 async function readFileContents(filePath) {
+
     return new Promise(function (fulfill, reject){
         var readStream = fs.createReadStream(filePath);
         var fileContents = [];
